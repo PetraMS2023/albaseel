@@ -1,0 +1,137 @@
+html,
+body{
+    direction: rtl;
+}
+
+.home .text{
+    right: -50%;
+}
+
+.btn::before{
+    content: "";
+    position: absolute;
+    background-color: #00000008;
+    border-radius: 5px;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transition: var(--main-transition);
+    z-index: -1;
+}
+
+.services .container .right .image img{
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    left: -40px;
+    top: -40px;
+}
+
+.footer .container .top .right .helpful-link .title::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    height: 5px;
+    bottom: -7px;
+}
+
+.footer .container .top .right .contact-us .title::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    height: 5px;
+    bottom: -7px;
+}
+
+.footer .container .top .right .helpful-link ul li img{
+    width: 10px;
+    transform: rotate(180deg);
+}
+
+.about-page .container .info .title::before{
+    content: "";
+    position: absolute;
+    background-color: var(--main-blue-color);
+    width: 100%;
+    height: 4px;
+    bottom: -12px;
+}
+
+.services-page .container .sr .serv .title::before{
+    content: "";
+    position: absolute;
+    background-color: var(--main-blue-color);
+    width: 100%;
+    height: 4px;
+    bottom: -12px;
+}
+
+.contact-page .container .bottom form label{
+    font-size: 25px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--main-blue-color);
+    border-right: 5px solid;
+    padding-right: 10px;
+    border-left: 0;
+}
+
+.contact-page .container .bottom form input:not(:last-child){
+    padding: 3px;
+    border: 0;
+    background-color: rgb(2 141 207 / 14%);
+    color: black;
+    border-right: 5px solid var(--main-blue-color);
+    margin-bottom: 10px;
+}
+
+.contact-page .container .bottom form textarea {
+    background-color: rgb(2 141 207 / 14%);
+    border: 0;
+    border-right: 5px solid var(--main-blue-color);
+    margin-bottom: 25px;
+    color: black;
+    padding: 3px;
+}
+
+.details .de ul{
+    padding-right: 25px;
+    padding-left: auto;
+}
+
+.services .container .right .image img {
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    right: 40px;
+    top: -40px;
+}
+
+.main-title::before{
+        content: "";
+    position: absolute;
+    width: 30%;
+    height: 5px;
+    background-color: var(--sec-main-blue-color);
+    left: 50%;
+    top: 60px;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+    .main-title::before{
+        content: "";
+    position: absolute;
+    width: 30%;
+    height: 5px;
+    background-color: var(--sec-main-blue-color);
+    left: 50%;
+    top: 50px;
+    transform: translate(-50%, -50%);
+    }
+}
+
